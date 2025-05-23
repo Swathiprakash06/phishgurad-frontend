@@ -8,7 +8,7 @@ async function checkURL() {
   }
 
   try {
-    const response = await fetch("https://phishguard-x-lprx.onrender.com/scan", {
+    const response = await fetch("https://phishguard-x-lprx.onrender.com/api/scan", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
