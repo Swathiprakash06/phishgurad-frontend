@@ -1,37 +1,208 @@
-body {
-  color: rgb(239, 242, 245);
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6;
-  background:#1e1f30;
+   body {
+      font-family: 'Inter', sans-serif;
+      background-color: #2e314a;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #1d1f2f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      padding: 3rem ;
+      background: linear-gradient(to right, #6b21a8, #1e3a8a);
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    .hero-buttons {
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      background-color: #4f46e5;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      color: white;
+      border: none;
+      margin-right: 1rem;
+    }
+
+    .scanner {
+      background-color: #2d2f40;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin: 2rem auto;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .scanner input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      color: black;
+    }
+
+    .scanner button {
+      margin-top: 1rem;
+      width: 100%;
+      background-color: #9333ea;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      border: none;
+      color: white;
+    }
+
+    .how-it-works,
+    .features {
+      padding: 1rem 1rem;
+      text-align: center;
+    }
+
+
+    .hybrid-model-section {
+  padding: 3rem 2rem;
+  background-color: #2c2e40;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
   text-align: center;
-  margin-top: 50px;
+  margin-bottom: 0.5rem;
 }
 
-.container {
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
- /* background-color: #f3f4f6;*/
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ccc;
 }
 
-input[type="text"] {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
+.model-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.model-box {
+  flex: 1;
+  min-width: 300px;
+  background-color: #373a50;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
 }
 
-#result {
-  margin-top: 20px;
-  font-weight: bold;
+.model-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
 }
+
+.model-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.model-box ul li {
+  margin: 0.5rem 0;
+}
+
+.features {
+  padding: 4rem 2rem;
+  background-color: #1e2130;
+  color: #fff;
+  text-align: center;
+}
+
+.features-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-box {
+  background-color: #2c2e40;
+  flex: 1;
+  min-width: 250px;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.feature-box p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+
+    .check {
+      color: #4ade80;
+      margin-right: 0.5rem;
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #8b5cf6;
+    }
+
+    .alert-box {
+      background-color: #ef4444;
+      padding: 1rem;
+      text-align: center;   
+    }
+
+    .alert-box button {
+      margin-top: 1rem;
+      background-color: white;
+      color: #ef4444;
+      padding: 0.5rem 0.5 rem;
+      font-weight: 700;
+      border-radius: 0.5rem;
+    }
+
+    .footer {
+      background-color: #f0f0f3;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      color: #110101;
+    }
