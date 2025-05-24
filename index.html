@@ -2,17 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PhishGuard X</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishGuard - Phishing URL Detection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
   <link rel="stylesheet" href="style.css">
-</head>
 <body>
-  <div class="container">
-    <h1>PhishGuard X</h1>
-    <p>Enter a URL to check if it's phishing or safe:</p>
-    <input type="text" id="urlInput" placeholder="https://example.com">
-    <button onclick="checkURL()">Check</button>
-    <div id="result"></div>
+  <header class="navbar">
+    <div class="flex items-center space-x-3">
+      <h1>PhishGuard X</h1>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Protect yourself from phishing attacks!!!</h2>
+    <p>PhishGuard uses a hybrid LSTM and Random Forest model to detect phishing URLs with high accuracy. Enter a URL below to check if it’s safe.</p>
+     </section>
+
+  <section class="scanner">
+    <label for="url">Scan a URL</label>
+    <input type="text" id="url" placeholder="e.g., example.com or https://example.com">
+    <button>Scan</button>
+    <p class="text-sm">We’ll analyze this URL for phishing indicators</p>
+  </section>
+   <section class="hybrid-model-section">
+  <h2 class="section-title">How PhishGuard Works</h2>
+  <p class="section-subtitle">Our advanced hybrid model combines two powerful machine learning techniques</p>
+  
+  <div class="model-columns">
+    <!-- LSTM Left Block -->
+    <div class="model-box left">
+      <h3>🧠 LSTM Neural Network</h3>
+      <p>Long Short-Term Memory (LSTM) networks analyze URL patterns at the character level, capturing sequential information and understanding the structure of phishing URLs.</p>
+      <ul>
+        <li>✅ Character pattern recognition</li>
+        <li>✅ Sequential analysis</li>
+        <li>✅ Deep learning capabilities</li>
+      </ul>
+    </div>
+
+    <!-- Random Forest Right Block -->
+    <div class="model-box right">
+      <h3>🌲 Random Forest Classifier</h3>
+      <p>Random Forest analyzes extracted features from URLs to identify patterns common in phishing sites, using multiple decision trees to make robust predictions.</p>
+      <ul>
+        <li>✅ Feature-based analysis</li>
+        <li>✅ High interpretability</li>
+        <li>✅ Resistant to overfitting</li>
+      </ul>
+    </div>
   </div>
+</section>
+  <section class="features">
+  <h2 class="section-title">Key Features</h2>
+  <div class="features-row">
+    
+    <div class="feature-box">
+      <div class="feature-icon">⚡</div>
+      <h3>High Accuracy</h3>
+      <p>Our hybrid approach combines the strengths of multiple algorithms for improved detection accuracy.</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="feature-icon">🧩</div>
+      <h3>Feature Visualization</h3>
+      <p>See exactly which indicators in the URL triggered a phishing detection.</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="feature-icon">🔗</div>
+      <h3>API Access</h3>
+      <p>Integrate our phishing detection into your own applications with our simple API.</p>
+    </div>
+
+  </div>
+</section>
+  <section class="alert-box">
+    <p>Phishing attacks are on the rise</p>
+    <p>Protect yourself and your organization from sophisticated phishing attempts that can steal your sensitive information.</p>
+    
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 PhishGuard - Phishing URL Detection System</p>
+    <p>Built with a hybrid LSTM + Random Forest model for accurate phishing detection</p>
+  </footer>
   <script src="script.js"></script>
 </body>
+
 </html>
+
