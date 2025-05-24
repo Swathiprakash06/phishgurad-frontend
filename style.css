@@ -78,6 +78,25 @@
       border: none;
       color: white;
     }
+     .loader-bar {
+  height: 20px;
+  background: repeating-linear-gradient(
+    45deg,
+    #a98bff,
+    #a98bff 10px,
+    #6b46c1 10px,
+    #6b46c1 20px
+  );
+  background-size: 200% 100%;
+  animation: loading 1s linear infinite;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
 
     .how-it-works,
     .features {
@@ -187,7 +206,9 @@
     .alert-box {
       background-color: #ef4444;
       padding: 1rem;
-      text-align: center;   
+      text-align: center;
+      
+      
     }
 
     .alert-box button {
@@ -197,6 +218,7 @@
       padding: 0.5rem 0.5 rem;
       font-weight: 700;
       border-radius: 0.5rem;
+      
     }
 
     .footer {
