@@ -21,9 +21,9 @@
 
   <section class="scanner">
     <label for="url">Scan a URL</label>
-    <div id="result"></div>
     <input type="text" id="url" placeholder="e.g., example.com or https://example.com">
     <button onclick="checkURL()">Scan</button>
+    <div id="result" class="result-box"></div>
     <p class="text-sm">We’ll analyze this URL for phishing indicators</p>
   </section>
    <section class="hybrid-model-section">
@@ -88,8 +88,15 @@
     <p>&copy; 2025 PhishGuard - Phishing URL Detection System</p>
     <p>Built with a hybrid LSTM + Random Forest model for accurate phishing detection</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js">
+      document.getElementById("url").addEventListener("keypress", function(e) {
+       if (e.key === "Enter") {
+        checkURL();
+    }
+  });
+  </script>
 </body>
 
 </html>
+
 
